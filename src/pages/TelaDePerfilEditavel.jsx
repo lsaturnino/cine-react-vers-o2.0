@@ -111,7 +111,7 @@ function ProfilePicture() {
   function Profile() {
     return (
       <div>
-        <div class="container">
+        <div class="container-perfil">
           <ProfilePicture />
           <UserInfos />
         </div>

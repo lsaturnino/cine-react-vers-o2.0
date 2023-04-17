@@ -12,6 +12,7 @@ import Profile from './pages/TelaDePerfilEditavel'
 
 import './index.css'
 import './pages/TelaDePerfilEditavel.css'
+import './pages/MovieGrid.css'
 import Navbar from './components/Navbar'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route element={<App />}>
           <Route path='/' element={<Home />}/>
           <Route path= '/profile' element={<Profile />} />
+          <Route path='/cadastrar' />
+          <Route path='/login' />
           <Route path='/movie/:id' element={<Movie />}/>
           <Route path='search' element={<Search />}/>
         </Route>
