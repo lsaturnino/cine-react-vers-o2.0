@@ -6,6 +6,7 @@ import {HiPencil} from 'react-icons/hi'
 import {TbEyeFilled} from 'react-icons/tb'
 import {FaUserAlt} from 'react-icons/fa'
 import { RxMagnifyingGlass } from 'react-icons/rx';
+import {AiFillHome} from 'react-icons/ai'
 
 function Header() {
     return (
@@ -14,7 +15,7 @@ function Header() {
                 <img src="./public/images/cine.png" alt="" className="cine-logo"/>
                 <img src="./public/images/servletrecuperafoto.png" alt="" className="usuario-nao-cadastrado"/>              <li>
                 <a href="#">
-                  <i className="fa fa-home" aria-hidden="true" /> <VscTriangleUp /> Home
+                  <i className="fa fa-home" aria-hidden="true" /><VscTriangleUp /><AiFillHome /> Home     
                 </a>
                 <ul className="dropdown">
                   <li>
