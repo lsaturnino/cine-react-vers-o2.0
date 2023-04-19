@@ -12,30 +12,32 @@ function Header() {
     return (
         <div className="header">
             <ul className="header-list">
+            <img src="./public/images/superman.jpg" alt="" className="usuario-nao-cadastrado"/>
                 <img src="./public/images/cine.png" alt="" className="cine-logo"/>
-                <img src="./public/images/servletrecuperafoto.png" alt="" className="usuario-nao-cadastrado"/>              <li>
+                
+                <li>
                 <a href="#">
-                  <i className="fa fa-home" aria-hidden="true" /><VscTriangleUp /><AiFillHome /> Home     
+                  <i className="" aria-hidden="true" /><VscTriangleUp />  <AiFillHome /> Home     
                 </a>
                 <ul className="dropdown">
                   <li>
                     <a href="#">
-                      <i className="fa fa-film" aria-hidden="true" /><RiFilmFill /> Filmes </a>
+                      <i className="" aria-hidden="true" /><RiFilmFill /> Filmes </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fa fa-pencil" aria-hidden="true" /><HiPencil /> Reviews
+                      <i className="" aria-hidden="true" /><HiPencil /> Reviews
 
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fa fa-eye" aria-hidden="true" /><TbEyeFilled /> Para ver
+                      <i className="" aria-hidden="true" /><TbEyeFilled /> Para ver
                     </a>
                   </li>
                   <li>
                     <a href="login">
-                      <i className="fa fa-user" aria-hidden="true" /><FaUserAlt /> Perfil
+                      <i className="" aria-hidden="true" /><FaUserAlt /> Perfil
                     </a>
                   </li>
                 </ul>
@@ -46,11 +48,9 @@ function Header() {
                     name="fff"
                     placeholder=" Busque filmes, séries, reviews ou pessoas..."
                   />
-                  
                 </div>
                 
               </li>
-              
             </ul>
           </div>
           

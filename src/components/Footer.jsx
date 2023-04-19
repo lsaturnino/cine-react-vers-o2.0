@@ -39,16 +39,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="footer-col">
-          <div className="social-links ">
-            <li>
-              <a href="#">
-                <i className="fab fa-youtube" />
-              </a>
-              <a href="https://github.com/sapucaisocket">
-                <i className="fab fa-github" />
-              </a>
-            </li>
-          </div>
+          
         </div>
       </div>
       <h4 className="copy">

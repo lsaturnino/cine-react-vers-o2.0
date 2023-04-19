@@ -8,12 +8,13 @@ import Home from './pages/Home'
 import Movie from './pages/Movie'
 import Search from './pages/Search'
 import Profile from './pages/TelaDePerfilEditavel'
+import Login from './pages/Login'
 
 
 import './index.css'
 import './pages/TelaDePerfilEditavel.css'
 import './pages/MovieGrid.css'
-import Navbar from './components/Navbar'
+import './pages/Login.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/' element={<Home />}/>
           <Route path= '/profile' element={<Profile />} />
           <Route path='/cadastrar' />
-          <Route path='/login' />
+          <Route path='/login' element={<Login />}/>
           <Route path='/movie/:id' element={<Movie />}/>
           <Route path='search' element={<Search />}/>
         </Route>

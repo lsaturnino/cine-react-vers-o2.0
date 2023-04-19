@@ -95,7 +95,7 @@ function ProfilePicture() {
         <h2 id="avaliacoes-cabecalho">REVIEWS</h2>
       
       <div id="filme-poster-avaliado">
-        <a href="#"><img class="filme-avaliado" src="https://image.tmdb.org/t/p/original/MbP1pIUKQcZaC1XCwSomuiLrva.jpg" /></a>
+        <a href="#"><img class="filme-avaliado" src="./public/images/bullettrain.jpg" /></a>
       </div>
         <div id="infos-avaliacao">
           <span id="titulo-filme-avaliado">Bullet Train</span>
@@ -110,21 +110,23 @@ function ProfilePicture() {
   
   function Profile() {
     return (
-      <div>
-        <div class="container-perfil">
-          <ProfilePicture />
-          <UserInfos />
-        </div>
+      <body className='body-profile'>
         <div>
-          <OtherUserInfos />
+          <div class="container-perfil">
+            <ProfilePicture />
+            <UserInfos />
+          </div>
+          <div>
+            <OtherUserInfos />
+          </div>
+          <div>
+            <MoviesReviewedByUser />
+          </div>
+          <div>
+            <ReviewsDoUsuario />
+          </div>
         </div>
-        <div>
-          <MoviesReviewedByUser />
-        </div>
-        <div>
-          <ReviewsDoUsuario />
-        </div>
-      </div>
+      </body>
     );
   }
 
