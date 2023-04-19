@@ -12,9 +12,7 @@ function Header() {
     return (
         <div className="header">
             <ul className="header-list">
-            <img src="./public/images/superman.jpg" alt="" className="usuario-nao-cadastrado"/>
                 <img src="./public/images/cine.png" alt="" className="cine-logo"/>
-                
                 <li>
                 <a href="#">
                   <i className="" aria-hidden="true" /><VscTriangleUp />  <AiFillHome /> Home     
@@ -51,6 +49,7 @@ function Header() {
                 </div>
                 
               </li>
+              <img src="./public/images/superman.jpg" alt="" className="usuario-nao-cadastrado"/>
             </ul>
           </div>
           

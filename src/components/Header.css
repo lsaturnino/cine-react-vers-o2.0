@@ -21,7 +21,7 @@ body {
     float: left;
 }
 
-ul {
+ul, .usuario-nao-cadastrado {
     list-style: none;
     background: #0d0d0d;
     padding: 10px;
@@ -40,7 +40,7 @@ ul li a {
     --largura-dropdown: auto;
 }
 
-ul li a, .header .header-list img {
+ul li a, .header .header-list img  {
     display: inline-block;
     padding: 10px 20px;
     color: #f2efea;
@@ -118,7 +118,6 @@ ul li:hover ul.dropdown{
 
 .usuario-nao-cadastrado {
     float: right;
-    padding-right: 0;
     border-radius: 50%;
     width: 89px;
 }
