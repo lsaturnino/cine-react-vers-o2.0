@@ -57,7 +57,7 @@ ul li ul.dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #202020;
+  background-color: transparent;
   display: none;
   z-index: 999;
   padding: 0px;
@@ -67,7 +67,7 @@ ul li ul.dropdown {
 }
 ul li ul.dropdown a {
   background-color: #202020;
-  border: 3px solid black;
+  border: 2px solid #202020;
   width: 100%;
 }
 ul li ul.dropdown a:hover {
@@ -85,6 +85,7 @@ ul li:hover ul.dropdown{
 /*barra de busca */
 .box .barra-de-busca {
     background-color: white;
+    -webkit-text-fill-color: #557373;
 }
 .box {
     width: 800px;
