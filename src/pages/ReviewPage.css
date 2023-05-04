@@ -60,14 +60,21 @@
     margin-bottom: 8%;
 }
 
-body {
-    background-image: url('Images/backgroundmovies.png');
-    background-position: center;
+.body-ReviewPage {
+    padding: 8vh;
+    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url(./public/images/backgroundmovies.png);
     background-size: cover;
+    background-color: #0D0D0D;
+    background-repeat: no-repeat;
+    background-position: -27vw 0vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviewWindow {
-    margin-top: 5%;
     margin-left: 13.5%;
     margin-right: 13.5%;
     margin-bottom: 8%;

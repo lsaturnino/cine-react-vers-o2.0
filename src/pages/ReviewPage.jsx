@@ -38,17 +38,17 @@ function Estrelas() {
 
 function ReviewPage() {
     return (
-        <body>
-        <div className='reviewWindow'>
-            <div className='reviewContainer'>
-                <ProfilePicture />
-                <div className='ReviewWrite'>
-                    <ReviewInput />
-                    <Estrelas />
-                    <ReviewSendBtn />
+        <body className='body-ReviewPage'>
+            <div className='reviewWindow'>
+                <div className='reviewContainer'>
+                    <ProfilePicture />
+                    <div className='ReviewWrite'>
+                        <ReviewInput />
+                        <Estrelas />
+                        <ReviewSendBtn />
+                    </div>
                 </div>
             </div>
-        </div>
         </body>
     )
 }
