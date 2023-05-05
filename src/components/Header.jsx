@@ -41,7 +41,7 @@ function Header() {
                 </ul>
                 <div className="box">
                   <input
-                    class="barra-de-busca"
+                    className="barra-de-busca"
                     type="text"
                     name="fff"
                     placeholder=" Busque filmes, séries, reviews ou pessoas..."
