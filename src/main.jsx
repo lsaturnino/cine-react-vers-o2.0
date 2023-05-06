@@ -15,7 +15,7 @@ import NotFound from './pages/NotFound'
 import './pages/ReviewPage.css'
 import './index.css'
 import './pages/TelaDePerfilEditavel.css'
-import './pages/MovieGrid.css'
+import './pages/MoviesGrid.css'
 import './pages/Login.css'
 import './pages/NotFound.css'
 

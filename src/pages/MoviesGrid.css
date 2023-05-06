@@ -1,0 +1,11 @@
+.container .title {
+    color: pink;
+    font-size: 2.5em;
+}
+.movies-container {
+    float: left;
+}
+
+.movies-container div a {
+    background-color: blue;
+}
