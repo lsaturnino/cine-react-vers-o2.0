@@ -75,9 +75,12 @@ const Login = () => {
                                 <p>Ainda não possui uma conta? <a href="#">Crie uma!</a></p>
 
                             </div>
+                        
                             <button type='submit' className="submit">
-                                <i className="fa-brands fa-google"></i>
-                                Login através do Google
+                                <ol class="googleSubmit">
+                                    <div class="googleImg"><i className="fa-brands fa-google"></i></div>
+                                    <p>Login através do Google</p>
+                                </ol>
                             </button>
                         </div>
                     </div>
