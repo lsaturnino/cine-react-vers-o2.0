@@ -111,6 +111,16 @@
     margin-bottom: 10px;
 }
 
+.googleSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleSubmit p{
+    padding-left: 10px;
+}
+
+
 .login_body button:hover {
     background-color: #253d3d60;
     cursor: pointer;
