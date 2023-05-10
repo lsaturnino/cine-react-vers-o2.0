@@ -20,7 +20,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
+        const topRatedUrl = `${moviesURL}popular?${apiKey}&language=pt-BR`;
 
         getTopRatedMovies(topRatedUrl)
     }, [])
@@ -53,7 +53,7 @@ const Home = () => {
             <h2 className="title"> Indicados a 95° Premiação da Academy Awards Ver todos</h2>
             <div className="movies-container">
                 {topMovies.length === 0 && <p>Carregando...</p>}
-                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} type={1}/>)}
             </div>
         </div>
     )
