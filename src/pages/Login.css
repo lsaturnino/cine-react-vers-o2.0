@@ -124,6 +124,7 @@
 .login_body button:hover {
     background-color: #253d3d60;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .support {

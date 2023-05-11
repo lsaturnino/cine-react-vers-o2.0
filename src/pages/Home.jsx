@@ -48,13 +48,21 @@ const Home = () => {
 
     return (
         <div className="container">
-
-<div style={{textAlign:"center"}} w>{AuthUser ? <><p>{`Signed In as ${AuthUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <p>Signed Out</p>}</div>
-            <h2 className="title"> Indicados a 95° Premiação da Academy Awards Ver todos</h2>
-            <div className="movies-container">
-                {topMovies.length === 0 && <p>Carregando...</p>}
-                {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} type={1}/>)}
-            </div>
+            <div style={{textAlign:"center"}} w>{AuthUser ? <><p>{`Signed In as ${AuthUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <p>Signed Out</p>}</div>
+            
+           <div className="wrapper-content">
+                <div className="lista">
+                    <div className="title">
+                        <h2>Populares na Ciné</h2>
+                        <a href="#">Ver Lista</a>
+                    </div>
+                    <hr></hr>
+                    <div className="movie-container">
+                        {topMovies.length === 0 && <p>Carregando...</p>}
+                        {topMovies.length > 0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+                    </div>   
+                </div>
+           </div>
         </div>
     )
 }
