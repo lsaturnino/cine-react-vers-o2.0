@@ -14,12 +14,12 @@ function Header() {
             <ul className="header-list">
                 <img src="./public/images/cine.png" alt="" className="cine-logo"/>
                 <li>
-                <a href="#">
+                <a href="/">
                   <i className="" aria-hidden="true" /><VscTriangleUp />  <AiFillHome /> Home     
                 </a>
                 <ul className="dropdown">
                   <li>
-                    <a href="#">
+                    <a href="/">
                       <i className="" aria-hidden="true" /><RiFilmFill /> Filmes </a>
                   </li>
                   <li>

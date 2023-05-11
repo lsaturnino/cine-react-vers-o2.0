@@ -35,32 +35,21 @@ const Movie = () => {
     <div className="movie-page">
       {movie && (
         <>
-          <MovieCard movie={movie} showLink={false} type={2}/>
-          <img src={imageUrl + movie.backdrop_path} alt={movie.title} /> 
-          <p className="tagline">{movie.tagline}</p>
-          <div className="info">
-            <h3>
-              Orçamento:
-            </h3>
-            <p>{formatCurrency(movie.budget)}</p>
-          </div>
-          <div className="info">
-            <h3>
-              Receita:
-            </h3>
-            <p>{formatCurrency(movie.revenue)}</p>
-          </div>
-          <div className="info">
-            <h3>
-               Duração:
-            </h3>
-            <p>{movie.runtime} minutos</p>
-          </div>
-          <div className="info description">
-            <h3>
-              Descrição:
-            </h3>
-            <p>{movie.overview}</p>
+          <img id="movieImg" src={imageUrl + movie.backdrop_path} alt={movie.title} />
+          <div id="bgColor"></div>
+          <div className="infoPanel">
+            <p id="movieTitle" className="Title">{movie.title}</p>
+            <p id="movieTagline" className="tagline">"{movie.tagline}"</p>
+            <div id="description" className="info description">
+              <p>{movie.overview}</p>
+            </div>
+            <div id="duration" className="info">
+              <p>{movie.runtime} minutos de duração.</p>
+            </div>
+            <div className="movieBtns">
+              <button id="gostei">❤</button>
+              <button id="lista">📃</button>
+            </div>
           </div>
         </>
       )}
