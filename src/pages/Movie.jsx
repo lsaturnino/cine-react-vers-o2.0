@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+const imageUrl = import.meta.env.VITE_IMG
 import MovieCard from "../components/MovieCard";
 
 import "./Movie.css";
@@ -27,7 +27,7 @@ const Movie = () => {
   };
 
   useEffect(() => {
-    const movieUrl = `${moviesURL}${id}?${apiKey}`;
+    const movieUrl = `${moviesURL}${id}?${apiKey}&language=pt-BR`;
     getMovie(movieUrl);
   }, []);
 
@@ -35,9 +35,8 @@ const Movie = () => {
     <div className="movie-page">
       {movie && (
         <>
-          <MovieCard movie={movie} showLink={false} />
-          
-          <img src={"https://image.tmdb.org/t/p/w500//"+movie.backdrop_path}/>  
+          <MovieCard movie={movie} showLink={false} type={2}/>
+          <img src={imageUrl + movie.backdrop_path} alt={movie.title} /> 
           <p className="tagline">{movie.tagline}</p>
           <div className="info">
             <h3>

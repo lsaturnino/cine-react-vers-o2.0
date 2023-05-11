@@ -20,7 +20,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
+        const topRatedUrl = `${moviesURL}popular?${apiKey}&language=pt-BR`;
 
         getTopRatedMovies(topRatedUrl)
     }, [])
@@ -63,7 +63,6 @@ const Home = () => {
                     </div>   
                 </div>
            </div>
-            
         </div>
     )
 }
