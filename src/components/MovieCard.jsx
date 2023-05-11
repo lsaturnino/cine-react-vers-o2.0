@@ -14,6 +14,7 @@ const MovieCard = ({movie, showLink = true}) => {
         <FaStar /> {movie.vote_avarage}
     </p>
       </Link>}
+  
   </div>
 }
 

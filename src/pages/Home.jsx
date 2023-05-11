@@ -48,11 +48,9 @@ const Home = () => {
 
     return (
         <div className="container">
-
             <div style={{textAlign:"center"}} w>{AuthUser ? <><p>{`Signed In as ${AuthUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <p>Signed Out</p>}</div>
             
            <div className="wrapper-content">
-                
                 <div className="lista">
                     <div className="title">
                         <h2>Populares na Ciné</h2>
